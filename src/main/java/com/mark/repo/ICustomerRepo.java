@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Created by mcunningham on 1/23/2015.
  */
-@Repository
+
 public interface ICustomerRepo {
 
     Customer getCustomer(int id);
