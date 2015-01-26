@@ -7,17 +7,27 @@ import java.util.function.Predicate;
  */
 public class Customer {
     private Integer id;
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    private String userName;
     private String firstName;
     private String lastName;
     private Integer age;
     private Address address;
 
-    public Customer(Integer id, String firstName, String lastName, Integer age, Address address) {
+    public Customer(Integer id, String firstName, String lastName, Integer age, String userName) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
-        this.address = address;
+        this.userName = userName;
     }
 
     public String getFirstName() {

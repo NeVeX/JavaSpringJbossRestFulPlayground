@@ -16,4 +16,6 @@ public interface ICustomerRepo {
     List<Customer> getCustomers(Customer input);
 
     List<Customer> getCustomers();
+
+    Customer getCustomerForUserName(String userName);
 }

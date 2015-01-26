@@ -45,5 +45,9 @@
     <orderEntry type="library" name="Spring Integration-4.0.3" level="project" />
     <orderEntry type="library" name="javax.json.processing-1.0" level="project" />
     <orderEntry type="library" name="jackson-annotations-2.5.0" level="project" />
+    <orderEntry type="library" name="thymeleaf-spring4-2.1.4.RELEASE-sources" level="project" />
+    <orderEntry type="library" name="thymeleaf-spring4-2.1.4.RELEASE" level="project" />
+    <orderEntry type="library" name="thymeleaf-2.1.4.RELEASE" level="project" />
+    <orderEntry type="library" name="unbescape-1.1.0.RELEASE" level="project" />
   </component>
 </module>

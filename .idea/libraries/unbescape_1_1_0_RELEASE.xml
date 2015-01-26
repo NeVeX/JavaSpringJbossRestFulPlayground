@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="unbescape-1.1.0.RELEASE">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../thymeleaf-2.1.4.RELEASE-dist/thymeleaf-2.1.4.RELEASE/lib/unbescape-1.1.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../thymeleaf-2.1.4.RELEASE-dist/thymeleaf-2.1.4.RELEASE/lib/slf4j-api-1.6.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../thymeleaf-2.1.4.RELEASE-dist/thymeleaf-2.1.4.RELEASE/lib/ognl-3.0.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../thymeleaf-2.1.4.RELEASE-dist/thymeleaf-2.1.4.RELEASE/lib/javassist-3.16.1-GA.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

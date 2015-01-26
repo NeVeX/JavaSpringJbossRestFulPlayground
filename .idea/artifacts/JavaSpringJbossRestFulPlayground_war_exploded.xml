@@ -14,6 +14,9 @@
           <element id="library" level="project" name="Spring Integration-4.0.3" />
           <element id="library" level="project" name="javax.json.processing-1.0" />
           <element id="library" level="project" name="jackson-annotations-2.5.0" />
+          <element id="library" level="project" name="thymeleaf-2.1.4.RELEASE" />
+          <element id="library" level="project" name="thymeleaf-spring4-2.1.4.RELEASE" />
+          <element id="library" level="project" name="unbescape-1.1.0.RELEASE" />
         </element>
       </element>
     </root>

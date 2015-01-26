@@ -47,19 +47,25 @@ public class CustomerRepoImpl implements ICustomerRepo {
         return customerList;
     }
 
+    @Override
+    public Customer getCustomerForUserName(String userName) {
+        return customerList.stream().filter(c -> c.getUserName() != null && String.CASE_INSENSITIVE_ORDER.compare(c.getUserName(), userName) == 0).findFirst().orElse(null);
+    }
+
 
     private static List<Customer> customerList = new ArrayList<Customer>();
 
     static
     {
-        customerList.add( new Customer(1, "Mark", "Cunningham", 28, null));
-        customerList.add( new Customer(2, "John", "Smith", 23, null));
-        customerList.add( new Customer(3, "Sharon", "Flaherty", 58, null));
-        customerList.add( new Customer(4, "Caitriona", "Jones", 18, null));
-        customerList.add( new Customer(5, "Eileen", "Clancy", 44, null));
-        customerList.add( new Customer(6, "Frank", "Alcorta", 22, null));
-        customerList.add( new Customer(7, "Mark", "Finnegan", 30, null));
-        customerList.add( new Customer(8, "NeVeX", "Computing", 28, null));
+        customerList.add( new Customer(1, "Mark", "Cunningham", 28, "mark"));
+        customerList.add( new Customer(2, "John", "Smith", 23, "john"));
+        customerList.add( new Customer(3, "Sharon", "Flaherty", 58, "sharon"));
+        customerList.add( new Customer(4, "Caitriona", "Jones", 18, "cait"));
+        customerList.add( new Customer(5, "Eileen", "Clancy", 44, "eileen"));
+        customerList.add( new Customer(6, "Frank", "Costello", 22, "frank"));
+        customerList.add( new Customer(7, "Mark", "Finnegan", 30, "markf"));
+        customerList.add( new Customer(8, "NeVeX", "Computing", 28, "admin"));
+        customerList.add( new Customer(9, "Adriana", "Alcorta", 31, "admin"));
     }
 
 

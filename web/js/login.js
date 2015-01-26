@@ -23,7 +23,10 @@ function onFormSubmit(event)
     },
     error: function(data)
     {
-      console.log("There was an error submitting the form: "+data.msg);
+      console.log("There was an error submitting the form: "+data.responseText);
+      var errorDiv = $("#loginErrorDiv");
+      errorDiv.text("Nope, could not log you in");
+      errorDiv.show();
     }
   });
     console.log("submitted form");
