@@ -3,8 +3,26 @@
 <head lang="en">
     <meta charset="UTF-8"/>
     <title></title>
+    <script type="text/javascript" src="js/lib/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
 </head>
 <body>
-    <h2 th:text="|Welcome, ${customer.firstName} ${customer.lastName}">Welcome, STATIC</h2>
+    <h2 th:text="|Welcome, ${session.customer.firstName} ${session.customer.lastName}">Welcome, STATIC</h2>
+
+    <table th:with="cust=${session.customer}">
+        <tr>
+            <td>First Name</td>
+            <td><input th:text="${cust.firstName}" id="firstNameInput" readonly="true" class="toggleReadonly"/></td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td><input th:text="${cust.lastName}" id="lastNameInput" readonly="true" class="toggleReadonly"/></td>
+        </tr>
+        <tr>
+            <td align="left"><button type="button" id="editCustomerButton">Edit</button></td>
+        </tr>
+    </table>
+
+    <a href="logout">Logout</a>
 </body>
 </html>

@@ -3,9 +3,6 @@
   <component name="FacetManager">
     <facet type="web" name="Web">
       <configuration>
-        <descriptors>
-          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/web/WEB-INF/web.xml" />
-        </descriptors>
         <webroots>
           <root url="file://$MODULE_DIR$/web" relative="/" />
         </webroots>
@@ -49,5 +46,7 @@
     <orderEntry type="library" name="thymeleaf-spring4-2.1.4.RELEASE" level="project" />
     <orderEntry type="library" name="thymeleaf-2.1.4.RELEASE" level="project" />
     <orderEntry type="library" name="unbescape-1.1.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Jersey-2.2" level="project" />
+    <orderEntry type="library" name="thymeleaf-2.1.4.RELEASE" level="project" />
   </component>
 </module>
