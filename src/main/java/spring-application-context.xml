@@ -12,5 +12,13 @@
     <context:component-scan base-package="com.mark"/>
     <mvc:default-servlet-handler/> <!-- server up html too - don't have the dispatcher treat everything like a servlet request -->
 
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix">
+            <value>/WEB-INF/views/</value>
+        </property>
+        <property name="suffix">
+            <value>.html</value>
+        </property>
+    </bean>
 
 </beans>
